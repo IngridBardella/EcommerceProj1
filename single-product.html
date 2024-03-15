@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Product Detail | GadgeGalaxy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/tooplate-main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/flex-slider.css">
+
+  </head>
+
+  <body>
+    
+    <!-- Pre Header -->
+    <div id="pre-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span>Buy One, Get the Second 50% Off – Shop Now! Offer expires in</span>
+            <div class="countdown" data-date="2023/11/24">
+              <div class="countdown-holder">
+                <div class="dday"></div>
+                <div class="countdown-label"></div>
+              </div><!-- .countdown-holder -->
+
+              <div class="countdown-holder">
+                <div class="dhour"></div>
+                <div class="countdown-label"></div>
+              </div><!-- .countdown-holder -->
+
+              <div class="countdown-holder">
+                <div class="dmin"></div>
+                <div class="countdown-label"></div>
+              </div><!-- .countdown-holder -->
+
+              <div class="countdown-holder">
+                <div class="dsec"></div>
+                <div class="countdown-label"></div>
+              </div><!-- .countdown-holder -->
+            </div><!-- .countdown -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/images/BrandLogo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="products.html">Products
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Logo T-shirt</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-slider">
+              <div id="slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="assets/images/Big-04.png" alt="pic04"/>
+                  </li>
+                  <li>
+                    <img src="assets/images/Big-01.jpeg" alt="pic01"/>
+                  </li>
+                  <li>
+                    <img src="assets/images/Big-02.jpeg" alt="pic02"/>
+                  </li>
+                  <li>
+                    <img src="assets/images/Big-03.jpeg" alt="pic03"/>
+                  </li>
+                  <!-- items mirrored twice, total of 12 -->
+                </ul>
+              </div>
+              <div id="carousel" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="assets/images/thumb-01.jpg" alt="thumb01"/>
+                  </li>
+                  <li>
+                    <img src="assets/images/thumb-02.jpg" alt="thumb02"/>
+                  </li>
+                  <li>
+                    <img src="assets/images/thumb-03.jpg" alt="thumb03"/>
+                  </li>
+                  <li>
+                    <img src="assets/images/thumb-04.jpg" alt="thumb04"/>
+                  </li>
+                  <!-- items mirrored twice, total of 12 -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-content">
+              <h4>Logo T-shirt</h4>
+              <h6>$25.00</h6>
+              <p>This t-shirt is a comfortable and breathable garment made entirely from natural cotton fibers.<br>Materials:<ul id="myList"></ul></p>
+              <p><span id="stock">7</span> left on stock</p>
+              <form action="unknown.php" method="get">
+                <label for="quantity">Quantity:</label>
+                <input name="quantity" type="number" class="quantity-text" id="quantity" 
+                	onfocus="if(this.value == '1') { this.value = ''; }" 
+                    onBlur="if(this.value == '') { this.value = '1';}"
+                    min="1" value="1">
+                <input type="submit" class="button" value="Add To Cart" onclick="calculateTotal(); stockLeft(); return false;">
+                <input type="submit" class="button" value="Remove" id="removeButton">
+                <input type="submit" class="button" value="Find My Size" id="findButton">
+              </form>
+              <div class="down-content">
+                <div class="sub-total">
+                  <p>Sub-Total:<span id="subTotal">$0.00</span><p>
+                  <p>GST:<span id="gst">$0.00</span></p>
+                  <p>QST:<span id="qst">$0.00</span></p>
+                  <p><strong>Total:<span id="total">$0.00</span></strong></p>
+                </div>
+                <div class="share">
+                  <h6>Share: <span><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Single Page Ends Here -->
+
+
+    <!-- Similar Starts Here -->
+    <div class="featured-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>You May Also Like</h1>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <a href=#>
+                <div class="featured-item">
+                  <img src="assets/images/item-02.png" alt="Item 2">
+                  <h4>Silky Shirt</h4>
+                  <h6>$90.00</h6>
+                </div>
+              </a>
+              <a href=#>
+                <div class="featured-item">
+                  <img src="assets/images/item-03.png" alt="Item 3">
+                  <h4>Leather Wallet</h4>
+                  <h6>$35.00</h6>
+                </div>
+              </a>
+              <a href=#>
+                <div class="featured-item">
+                  <img src="assets/images/item-04.jpg" alt="Item 4">
+                  <h4>Tote Bag</h4>
+                  <h6>$200.00</h6>
+                </div>
+              </a>
+              <a href=#>
+                <div class="featured-item">
+                  <img src="assets/images/item-05.png" alt="Item 5">
+                  <h4>Pants</h4>
+                  <h6>$70.00</h6>
+                </div>
+              </a>
+              <a href=#>
+                <div class="featured-item">
+                  <img src="assets/images/item-06.png" alt="Item 6">
+                  <h4>Jeans</h4>
+                  <h6>$50.00</h6>
+                </div>
+              </a>
+              <a href=#>
+                <div class="featured-item">
+                  <img src="assets/images/item-07.png" alt="Item 7">
+                  <h4>Sneakers</h4>
+                  <h6>$120.00</h6>
+                </div>
+              </a>
+              <a href=#>
+                <div class="featured-item">
+                  <img src="assets/images/item-08.jpg" alt="Item 8">
+                  <h4>Winter Vest</h4>
+                  <h6>$60.00</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Similar Ends Here -->
+
+
+    <!-- Subscribe Form Starts Here -->
+    <div class="subscribe-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Subscribe on GadgeGalaxy now!</h1>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="main-content">
+              <p>Stay in the loop with our latest tech deals, exclusive offers, and insider updates. Get ready to unlock a world of innovation, one subscription away!</p>
+              <div class="container">
+                <form id="subscribe" action="https://example.com" method="get">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" 
+                        onfocus="if(this.value == 'Your Email...') { this.value = ''; }" 
+                    	onBlur="if(this.value == '') { this.value = 'Your Email...';}"
+                    	value="Your Email..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-5">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">Subscribe Now!</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribe Form Ends Here -->
+
+
+    
+    <!-- Footer Starts Here -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="logo">
+              <img src="assets/images/BrandLogo.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">How It Works ?</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="social-icons">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Ends Here -->
+
+
+    <!-- Sub Footer Starts Here -->
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2023 GadgeGalaxy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sub Footer Ends Here -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/flex-slider.js"></script>
+
+    <!-- CountDown Scripts-->
+    <script src="assets/js/countDown.js"></script>
+
+    <!-- CalculateTotal Scripts-->
+    <script src="assets/js/calculateTotal.js"></script>
+
+    <!--ArrayAndFor Scripts-->
+    <script src="assets/js/array.js"></script>
+
+    <!-- ValidateForm01 Scripts-->
+    <script src="assets/js/validateForm01.js"></script>
+
+    <!-- stock Scripts-->
+    <script src="assets/js/stock.js"></script>
+
+    <!-- findSize Scripts-->
+    <script src="assets/js/findSize.js"></script>
+
+    <!-- Include jQuery Validation Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+
+
+    <script type = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; 
+      function clearField(t){                   
+      if(! cleared[t.id]){                      
+          cleared[t.id] = 1;  
+          t.value='';         
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>

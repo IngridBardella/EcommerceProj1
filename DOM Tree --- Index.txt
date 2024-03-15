@@ -1,0 +1,39 @@
+DOM TREE FOR index.html
+
+BODY
+ DIV
+  DIV.container
+   DIV.row
+    DIV.col-md-12
+ NAV.navbar navbar-expand-lg navbar-dark bg-dark static-top
+  DIV.container
+   A.navbar-brand
+    IMG
+  BUTTON.navbar-toggler
+   SPAN.navbar-toggler-icon
+  DIV.collapse navbar-collapse
+   UL.navbar-nav ml-auto
+ DIV.banner
+  DIV.container
+   DIV.row
+    DIV.col-md-12
+  DIV.featured-items
+   DIV.container
+    DIV.row
+     DIV.col-md-12
+      DIV.col-md-12
+ DIV.subscribe-form
+  DIV.container
+   DIV.row
+    DIV.col-md-12
+    DIV.col-md-8 offset-md-2
+ DIV.footer
+  DIV.container
+   DIV.row
+    DIV.col-md-12
+    DIV.col-md-12
+    DIV.col-md-12
+ DIV.sub-footer
+  DIV.container
+   DIV.row
+    DIV.col-md-12
